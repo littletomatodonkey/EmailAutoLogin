@@ -72,6 +72,7 @@ namespace EmailAutoLogin
             if( dgAccountBrowser.SelectedRows == null )
             {
                 MessageBox.Show("have not selected any email account as now~");
+                return;
             }
             int index = dgAccountBrowser.SelectedRows[0].Index;
 

@@ -37,6 +37,7 @@
             this.colPasswd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSaveInfo = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgAccountBrowser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,11 +132,22 @@
             this.btnSaveInfo.UseVisualStyleBackColor = true;
             this.btnSaveInfo.Click += new System.EventHandler(this.btnSaveInfo_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox1.Location = new System.Drawing.Point(23, 198);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(138, 83);
+            this.textBox1.TabIndex = 8;
+            this.textBox1.Text = "打开网页后，自动填充账号和密码并登录的快捷键是\'Ctrl+Alt+F\'";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 651);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnSaveInfo);
             this.Controls.Add(this.dgAccountBrowser);
             this.Controls.Add(this.btnChangeAccountInfo);
@@ -148,6 +160,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgAccountBrowser)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -162,6 +175,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colAccount;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPasswd;
         private System.Windows.Forms.DataGridViewTextBoxColumn type;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
