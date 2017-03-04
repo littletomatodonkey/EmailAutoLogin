@@ -38,6 +38,7 @@
             this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSaveInfo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbSaveInfoBeforeQuit = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgAccountBrowser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +91,7 @@
             this.colAccount,
             this.colPasswd,
             this.type});
-            this.dgAccountBrowser.Location = new System.Drawing.Point(184, 25);
+            this.dgAccountBrowser.Location = new System.Drawing.Point(197, 25);
             this.dgAccountBrowser.MultiSelect = false;
             this.dgAccountBrowser.Name = "dgAccountBrowser";
             this.dgAccountBrowser.ReadOnly = true;
@@ -98,7 +99,7 @@
             this.dgAccountBrowser.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgAccountBrowser.RowTemplate.Height = 23;
             this.dgAccountBrowser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgAccountBrowser.Size = new System.Drawing.Size(761, 290);
+            this.dgAccountBrowser.Size = new System.Drawing.Size(748, 290);
             this.dgAccountBrowser.TabIndex = 5;
             // 
             // colAccount
@@ -142,11 +143,23 @@
             this.textBox1.TabIndex = 8;
             this.textBox1.Text = "打开网页后，自动填充账号和密码并登录的快捷键是\'Ctrl+Alt+F\'";
             // 
+            // cbSaveInfoBeforeQuit
+            // 
+            this.cbSaveInfoBeforeQuit.AutoSize = true;
+            this.cbSaveInfoBeforeQuit.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbSaveInfoBeforeQuit.Location = new System.Drawing.Point(23, 320);
+            this.cbSaveInfoBeforeQuit.Name = "cbSaveInfoBeforeQuit";
+            this.cbSaveInfoBeforeQuit.Size = new System.Drawing.Size(171, 20);
+            this.cbSaveInfoBeforeQuit.TabIndex = 9;
+            this.cbSaveInfoBeforeQuit.Text = "退出时保存账号信息";
+            this.cbSaveInfoBeforeQuit.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 651);
+            this.Controls.Add(this.cbSaveInfoBeforeQuit);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnSaveInfo);
             this.Controls.Add(this.dgAccountBrowser);
@@ -176,6 +189,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colPasswd;
         private System.Windows.Forms.DataGridViewTextBoxColumn type;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox cbSaveInfoBeforeQuit;
     }
 }
 

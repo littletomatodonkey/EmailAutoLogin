@@ -166,7 +166,7 @@ namespace EmailAutoLogin
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if( MessageBox.Show(this, "正在关闭程序，需要保存当前的账号信息吗？", "closing...", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK )
+            if( cbSaveInfoBeforeQuit.Checked && MessageBox.Show(this, "正在关闭程序，需要保存当前的账号信息吗？", "closing...", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK )
             {
                 SaveAccountsInfo();
             }
